@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <title>Animation Practise</title>
+    <style>
+     .container{
+         border: 2px solid black;
+         display: flex;
+         height: 700px;
+         width: 1520px;
+         justify-content: space-between;
+         animation: container 30s ease-in-out 1s 2 forwards;
+
+        
+     }
+     @keyframes container{ 
+        0%{
+           
+        }
+        20%{
+         border-bottom-left-radius: 800px;
+         border-bottom-right-radius: 800px;
+         background-color: burlywood;
+        }
+        40%{
+            border-bottom-left-radius: 0px;
+         border-bottom-right-radius: 0px;
+        }
+        60%{
+           background-color: chartreuse;
+        }
+        80%{
+            border-top-left-radius: 800px;
+         border-top-right-radius:800px;
+        }
+        100%{
+            border-top-left-radius: 0px;
+         border-top-right-radius: 0px;
+         background-color: darkgray;
+        }
+     }
+     .box{
+         border: 2px solid greenyellow;
+         width: 200px;
+         height: 200px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+     #box1{
+         position: relative;
+         animation: box1 10s ease-in-out 1s 6 forwards;
+         /* transition: all 100s ease-in-out 0s;no need of using transition because all the properties are in the animation variable */
+     }
+   
+      @keyframes box1{
+          0%{
+             top: 0px;
+             left: 0px;
+         }
+         25%{
+             top: 498px;
+             left: 0px;
+             background-color: black;
+             color: white;
+            box-shadow: 4px 4px 4px black;
+         }
+         50%{
+             top: 498px;
+              left: 675px;
+              transform: rotate(45deg);
+              border-radius: 24px;
+         }
+         75%{
+             top: 0px;
+             left: 675px;
+          }
+         100%{
+             top: 0px;
+             left: 0px;
+         } 
+     } 
+
+     #box2{
+         position: relative;
+         animation: box2 12s ease-in-out 1s 5 forwards;
+        ;
+     }
+
+     @keyframes box2{
+         0%{
+             top: 0px;
+             right: 0px;
+         }
+         25%{
+             top: 0px;
+             right: 440px;
+             transform:rotate(45deg);
+             border-radius: 242px;
+             transform: translatex(45px);
+             box-shadow: 4px 4px 4px brown;
+         }
+         50%{
+             top: 498px;
+             right: 440px;
+             background-color: brown;
+             color: coral;
+         }
+         75%{
+             top: 498px;
+             right: 0px;
+             transform: scalex(2);
+         }
+         100%{
+             top: 0px;
+             right: 0px;
+         }
+     }
+    #box3{
+         position: relative;
+         animation: box3 10s ease-in-out 1s 6 forwards;
+         
+      } 
+     @keyframes box3{
+         0%{
+             top: 0px;
+             left: 0px;
+         }
+         25%{
+             top: 498px;
+             left: 0px;
+            transform: rotatey(60deg);
+            background-color: cyan;
+            border-radius: 400px;
+            box-shadow: -6px -6px 4px cyan;
+         }
+         50%{
+             top: 498px;
+             left: 440px;
+             transform: rotatex(60deg);
+             background-color: yellow;
+             color: blueviolet;
+             box-shadow: 6px 6px 4px yellow;
+         }
+         75%{
+             top: 0px;
+             left: 440px;
+         }
+         100%{
+             top: 0px;
+             left: 0px;
+         }
+     }
+     #box4{
+         position: relative; 
+         animation: box4 6s ease-in-out 1s 10 forwards;
+        
+      } 
+     @keyframes box4{
+         0%{
+             top: 0px;
+             right: 0px;
+         }
+         25%{
+             top: 0px;
+             right: 643px;
+             transform:skewX(360deg) ;
+         }
+         50%{
+             top: 498px;
+             right: 643px;
+             background-color: cornsilk;
+             transform: skewY(45deg);
+             box-shadow: 8px 8px 4px cornsilk;
+         }
+         75%{
+             top: 498px;
+             right: 0px;
+             background-color: darkmagenta;
+            box-shadow: 8px -8px 4px darkviolet;
+             transform: translatex(-400px);
+         }
+         100%{
+             top: 0px;
+             right: 0px;
+         }
+     }  
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">This is first</div>
+        <div class="box" id="box2">This is second</div>
+        <div class="box" id="box3">This is third</div>
+        <div class="box" id="box4">This is fourth</div>
+
+
+    </div>
+</body>
+
+</html>
