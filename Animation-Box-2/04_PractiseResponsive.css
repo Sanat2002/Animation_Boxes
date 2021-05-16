@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#div1{
+    display: grid;
+    border: 2px solid black;
+    height: 750px;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    'box1 box2'
+    'box3 box3'
+    'box4 box5';
+}
+.box{
+    display: grid;
+    border: 2px solid black;
+    /* text-align: center;
+    text-decoration: underline; */
+    /* justify-content: center;
+    align-items: center; */
+    margin: 10px;
+}
+#box1{
+    grid-area: box1;
+    grid-template-areas: 
+    'box6 box7';
+    grid-gap: .2em;
+    padding: 2px;
+}
+#box2{
+    grid-area: box2;
+    grid-template-areas: 'box8 box9';
+    grid-gap: .2em;
+    padding: 2px;
+}
+#box3{
+    grid-area: box3;
+    grid-template-areas: 
+    'box10'
+    'box11';
+    grid-gap: .2em;
+    padding: 2px;
+}
+#box4{
+    grid-area: box4;
+    grid-template-areas: 
+    'box12 box13';
+    grid-gap: .2em;
+    padding: 2px;
+}
+#box5{
+    grid-area: box5;
+    grid-template-areas: 
+    'box14 box15';
+    grid-gap: .2em;
+    padding: 2px;
+}
+@media only screen and (max-width:300px){
+#div1{
+    grid-template-areas: 
+    'box1 box1'
+     'box2 box2'
+     'box3 box3'
+     'box4 box4'
+     'box5 box5';
+} 
+#box1{
+    grid-template-areas: 
+    'box6'
+    'box7';
+} 
+#box5{
+    grid-template-areas:
+    'box14'
+    'box15';
+}  
+}
+#box6{
+    grid-area: box6;
+    position: relative;
+    animation: box6 100ms  ease-in-out infinite forwards ;
+    /* transition: all 10s ease-in-out 2s; */
+}
+@keyframes box6 {
+    0%{
+        background-color: black;
+        /* left: 0px; */
+    }
+    50%{
+        background-color: rebeccapurple;
+        /* border-radius: 40px; */
+         /* left: 774px; */
+    }
+   100%{
+        background-color: yellow;
+        /* left: 0px; */
+    }
+    
+}
+#box7{
+    position: relative;
+    grid-area: box7;
+    animation: box7 5s ease-out infinite forwards;
+    /* transition: background-color 5ms; */
+}
+@keyframes box7 {
+    0%{
+        background-color: blue;
+        left: 0px;
+    }
+    50%{
+        background-color: purple;
+        border-radius: 200px;
+         left: 408px;
+    }
+   100%{
+        background-color: yellow;
+        left: 0px;
+    }
+}
+#box8{
+    position: relative;
+    grid-area: box8;
+    animation: box8 5s ease-out infinite forwards;
+}
+@keyframes box8 {
+    0%{
+        background-color: rgb(214, 214, 160);
+        right: 0px;
+    }
+    50%{
+        background-color: purple;
+        border-radius: 200px;
+         right: 408px;
+    }
+   100%{
+        background-color: black;
+        right: 0px;
+    }
+}
+#box9{
+    position: relative;
+    grid-area: box9;
+    animation: box9 100ms ease-in-out infinite forwards;
+    transition: transform 2s ease-in-out 1s;
+}
+#box9:hover{
+    transform: rotate(45deg);
+}
+@keyframes box9 {
+    0%{
+        background-color: yellow;
+        /* right: 0px; */
+    }
+    50%{
+        background-color: rebeccapurple;
+        /* border-radius: 20px; */
+         /* right: 774px; */
+    }
+   100%{
+        background-color: black;
+        /* right: 0px; */
+    }
+}
+#box10{
+    background-color: black;
+    position: relative;
+    grid-area: box10;
+    animation: box10 5s ease infinite forwards;
+}
+@keyframes box10 {
+    0%{
+        /* background-color: wheat; */
+        bottom: 0px;
+    }
+    50%{
+        /* background-color: rgb(56, 68, 13); */
+        /* border-radius: 20px; */
+         bottom: 268px;
+    }
+   100%{
+        /* background-color: rgb(231, 140, 80); */
+        bottom: 0px;
+    }
+}
+#box11{
+    background-color: black;
+    position: relative;
+    grid-area: box11;
+    animation: box11 5s ease infinite forwards;
+}
+@keyframes box11 {
+    0%{
+        /* background-color: black; */
+        top: 0px;
+    }
+    50%{
+        /* background-color: rebeccapurple; */
+        /* border-radius: 20px; */
+         top: 268px;
+    }
+   100%{
+        /* background-color: yellow; */
+        top: 0px;
+    }
+}
+#box12{
+    position: relative;
+    grid-area: box12;
+    animation: box12 5s ease-in infinite forwards;
+}
+@keyframes box12 {
+    0%{
+        background-color: rgb(206, 66, 66);
+        left: 0px;
+    }
+    50%{
+        background-color: rgb(29, 179, 206);
+        /* border-radius: 20px; */
+         left: 774px;
+    }
+   100%{
+        background-color: rgb(159, 151, 233);
+        left: 0px;
+    }
+}
+#box13{
+    grid-area: box13;
+    animation: box13 100ms ease-in-out infinite forwards;
+}
+@keyframes box13 {
+    0%{
+        background-color: rgb(93, 117, 36);
+        /* left: 0px; */
+    }
+    50%{
+        background-color: rgb(233, 236, 184);
+        /* border-radius: 20px; */
+         /* left: 200px; */
+    }
+   100%{
+        background-color: rgb(195, 85, 209);
+        /* left: 0px; */
+    }
+}
+#box14{
+    grid-area: box14;
+    animation: box14 100ms ease-in-out infinite forwards;
+}
+@keyframes box14 {
+    0%{
+        background-color: rgb(233, 173, 173);
+
+    }
+    50%{
+        background-color: rgb(63, 15, 25);
+
+    }
+   100%{
+        background-color: rgba(187, 113, 43, 0.616);
+
+    }
+}
+#box15{
+    position: relative;
+    grid-area: box15;
+    animation: box15 5s ease-in infinite forwards;
+}
+@keyframes box15 {
+    0%{
+        background-color: rgb(24, 158, 192);
+        right: 0px;
+    }
+    50%{
+        background-color: rgb(78, 5, 56);
+         right: 774px;
+    }
+   100%{
+        background-color: rgba(117, 111, 110, 0.603);
+        right: 0px;
+    } 
+}
+@media only screen and (min-width:350px) and (max-width:400px){
+  
+    @keyframes box7 {
+        0%{
+            background-color: blue;
+            left: 0px;
+        }
+        50%{
+            background-color: purple;
+            border-radius: 200px;
+             left: 123px;
+        }
+       100%{
+            background-color: yellow;
+            left: 0px;
+        }
+    }
+    @keyframes box8 {
+        0%{
+            background-color: rgb(214, 214, 160);
+            right: 0px;
+        }
+        50%{
+            background-color: purple;
+            border-radius: 200px;
+             right: 123px;
+        }
+       100%{
+            background-color: black;
+            right: 0px;
+        }
+    }
+    @keyframes box12 {
+        0%{
+            background-color: rgb(206, 66, 66);
+            left: 0px;
+        }
+        50%{
+            background-color: rgb(29, 179, 206);
+             left: 200px;
+        }
+       100%{
+            background-color: rgb(159, 151, 233);
+            left: 0px;
+        }
+    }
+    @keyframes box15 {
+        0%{
+            background-color: rgb(24, 158, 192);
+            right: 0px;
+        }
+        50%{
+            background-color: rgb(78, 5, 56);
+            right: 200px;
+        }
+       100%{
+            background-color: rgba(117, 111, 110, 0.603);
+            right: 0px;
+        } 
+    }
+}
