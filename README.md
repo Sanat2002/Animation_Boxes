@@ -2,7 +2,7 @@
 <h3 align="left"> These are the box animations that i made using css.</h3>
 <hr>
 <h3 align="left">1. First one---</h3>
-<video src="https://user-images.githubusercontent.com/76841209/128607468-63f6f293-3aa6-489d-8c30-a837f3b951ee.mp4">
+<video src="https://user-images.githubusercontent.com/76841209/128607577-6188a9b8-350a-4256-8e72-a250f3b136ed.mp4">
 <hr>
 <h3 align = "left">2. Second---</h3>
-<video src="https://user-images.githubusercontent.com/76841209/128607472-f345a7fc-13da-494d-9b21-54f9a4a857bf.mp4">
+<video src="https://user-images.githubusercontent.com/76841209/128607594-a8145fe5-3212-4b5c-acfd-e51488c3fc99.mp4">
