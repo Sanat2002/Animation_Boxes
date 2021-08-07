@@ -6,6 +6,3 @@
 <hr>
 <h3 align = "left">2. Second---</h3>
 <video src="https://user-images.githubusercontent.com/76841209/128600739-30470adc-3904-40d5-950f-a0869b166eac.mp4">
-
-
-
